@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+// Essa alteração vem do ANgular Material e é para alterar a cor do slider,
+//pois o padrão é cinza e não tem contraste com o tema escuro
+mat-slider .mdc-slider__track--active_fill {
+  border-color: #ab2c09 !important;
+}
