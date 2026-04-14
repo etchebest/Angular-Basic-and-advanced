@@ -1,5 +1,12 @@
-<div class="cards-container">
-  <app-card></app-card>
+<app-button
+  [buttonText]="'Botão Ref'"
+  [buttonStyle]="'purple'"
+  [disabled]="true"
+  (clicked)="clickedButton()"
+></app-button>
 
-  <app-card-roxo></app-card-roxo>
-</div>
+<app-button
+  [buttonText]="'Botão Ref'"
+  [buttonStyle]="'white'"
+  (clicked)="clickedButton()"
+></app-button>
