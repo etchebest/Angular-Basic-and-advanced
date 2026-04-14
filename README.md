@@ -1,27 +1,55 @@
-# ProjetoComponents
+### Componentes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+- São blocos de construção fundamentais do Angular, permitindo a criação de elementos HTML reutilizáveis e dinâmicos em nossa aplicação.
 
-## Development server
+### Property Binding
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Permite a atualização dinâmica das propriedades de elementos HTML com base em valores na classe do componente.
 
-## Code scaffolding
+### Event Binding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Permite a resposta a eventos do usuário, como cliques ou teclas pressionadas, executando ações específicas definidas no componente.
 
-## Build
+### Attribute Binding
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Possibilita a manipulação dinâmica dos atributos de elementos HTML, permitindo a adaptação do comportamento da interface do usuário conforme necessário.
 
-## Running unit tests
+### Style Binding
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Permite a aplicação dinâmica de estilos CSS aos elementos HTML com base em valores na classe do componente.
 
-## Running end-to-end tests
+### Class Binding
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Facilita a adição dinâmica de classes CSS aos elementos HTML, proporcionando flexibilidade na estilização da interface do usuário.
 
-## Further help
+### @Input (Decorator)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Permite a comunicação entre componentes pais e filhos, enviando dados do componente pai para o componente filho.
+
+### @Output (Decorator)
+
+- Habilita a comunicação entre componentes filhos e pais, permitindo que os componentes filhos enviem dados de volta ao componente pai.
+
+### Código Duplicado
+
+- Aborda a importância de evitar a duplicação de código através da prática de componentização, promovendo a reutilização e manutenibilidade do código.
+
+### Two Way Data Binding
+
+- Permite a sincronização bidirecional de dados entre o template HTML e a classe do componente, garantindo uma atualização instantânea de ambas as fontes de dados.
+
+### NgIf (Diretiva)
+
+- Diretivas do Angular que permitem a renderização condicional de elementos e a adição dinâmica de classes CSS com base em condições.
+
+### NgFor (Diretiva)
+
+- Diretiva utilizada para iterar sobre uma coleção de dados, criando um elemento no DOM para cada item da coleção. Essencial para a renderização dinâmica de listas e elementos repetitivos no template HTML.
+
+#### NgStyle e NgClass (Diretivas)
+
+- Diretivas que possibilitam a aplicação dinâmica de estilos e classes CSS aos elementos HTML com base em valores na classe do componente.
+
+#### Pipes
+
+- Introduz a utilização de pipes no Angular, que são transformadores de dados utilizados para formatar e manipular valores exibidos no template HTML.
