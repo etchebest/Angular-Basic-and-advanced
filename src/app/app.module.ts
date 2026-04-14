@@ -3,9 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './components/button/button.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
-  declarations: [AppComponent, ButtonComponent, ButtonComponent],
+  declarations: [AppComponent, ButtonComponent, ButtonComponent, CardComponent],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],

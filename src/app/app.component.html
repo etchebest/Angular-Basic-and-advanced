@@ -1,4 +1,4 @@
-<app-button
+<!-- <app-button
   [buttonText]="'Botão Ref'"
   [buttonStyle]="'purple'"
   [disabled]="true"
@@ -9,4 +9,8 @@
   [buttonText]="'Botão Ref'"
   [buttonStyle]="'white'"
   (clicked)="clickedButton()"
-></app-button>
+></app-button> -->
+<div class="cards-container">
+  <app-card *ngFor="let card of cards" [style]="card.style" [planPrice]="card.planPrice" [planType]="card.planType"
+    (buttonClicked)="clickedButton()"></app-card>
+</div>
