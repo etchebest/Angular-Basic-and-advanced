@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 export interface ICards {
   id: number;
@@ -12,35 +12,18 @@ export interface ICards {
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit {
-  public cards: ICards[] = [];
+export class AppComponent {
+  // name: string = 'Felipe';
 
-  ngOnInit(): void {
-    this.cards = [
-      {
-        id: 1,
-        planType: 'Básico',
-        planPrice: 100,
-        style: 'orange',
-      },
-      {
-        id: 2,
-        planType: 'Intermediário',
-        planPrice: 200,
-        style: 'purple',
-      },
-      {
-        id: 3,
-        planType: 'Avançado',
-        planPrice: 300,
-        style: 'purple',
-      },
-    ];
-  }
+  personSelectedIndex: number | undefined;
+  listPeople = [
+    { name: 'Felipe Freitas', age: 26 },
+    { name: 'Fulano da Silva', age: 34 },
+    { name: 'Jorginho Carvalho', age: 55 },
+    { name: 'Joãozinho da Silva', age: 18 },
+  ];
 
-  clickedButton() {
-    console.log('====================================');
-    console.log('Botão clicado');
-    console.log('====================================');
+  selectPerson(index: number) {
+    this.personSelectedIndex = index;
   }
 }
